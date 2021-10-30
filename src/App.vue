@@ -40,7 +40,7 @@ import { Message, Utils } from 'bin-ui-next'
 import { boxImages } from '@/config/box'
 import { loadingImages } from '@/config/loading'
 import { decorationImages } from '@/config/decoration'
-import { bjImages } from '@/config/bg'
+import { bgImages } from '@/config/bg'
 import { widgetImages } from '@/config/widget'
 
 export default {
@@ -60,7 +60,7 @@ export default {
       loading: loadingImages,
       decoration: decorationImages,
       widget: widgetImages,
-      bg: bjImages,
+      bg: bgImages,
     }
     const previewImages = computed(() => presetImages[active.value] || [])
 

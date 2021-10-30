@@ -2,7 +2,7 @@ import { getCDNPath } from '@/env'
 
 const getImgUrl = (name) => getCDNPath(`/bg/${name}`)
 
-export const bjImages = [
+export const bgImages = [
   { id: 'bg0', name: '背景0', src: getImgUrl('bg0.jpg') },
   { id: 'bg1', name: '背景1', src: getImgUrl('bg1.jpg') },
   { id: 'bg2', name: '背景2', src: getImgUrl('bg2.jpg') },
