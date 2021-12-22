@@ -1,8 +1,8 @@
 import { getCDNPath } from '@/env'
 
-const getImgUrl = (name) => getCDNPath(`/illustration/${name}`)
+const getImgUrl = (name) => getCDNPath(`/insert/${name}`)
 
-export const illustrationImages = [
+export const insertImages = [
   { id: 'auto', name: 'auto', src: getImgUrl('auto.png') },
   { id: 'book', name: 'book', src: getImgUrl('book.png') },
   { id: 'cloud', name: 'cloud', src: getImgUrl('cloud.png') },

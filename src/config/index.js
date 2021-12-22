@@ -6,7 +6,7 @@ import { headerImages } from '@/config/header'
 import { widgetImages } from '@/config/widget'
 import { bgImages } from '@/config/bg'
 import { avatarImages } from '@/config/avatar'
-import { illustrationImages } from '@/config/illustration'
+import { insertImages } from '@/config/insert'
 import { otherImages } from '@/config/other'
 
 
@@ -17,7 +17,7 @@ export const imageMenu = [
   { index: 'header', icon: 'insertrowabove', name: '头部图片' },
   { index: 'widget', icon: 'hourglass', name: '小部件' },
   { index: 'avatar', icon: 'user', name: '头像图' },
-  { index: 'illustration', icon: 'linkedin', name: '插画' },
+  { index: 'insert', icon: 'linkedin', name: '插画' },
   { index: 'bg', icon: 'image', name: '壁纸图片' },
   { index: 'other', icon: 'Report', name: '其他图片' },
 ]
@@ -32,6 +32,6 @@ export const presetImages = {
   widget: widgetImages,
   avatar: avatarImages,
   bg: bgImages,
-  illustration: illustrationImages,
+  insert: insertImages,
   other: otherImages,
 }
