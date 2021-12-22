@@ -17,7 +17,7 @@ export default ({ mode }) => {
     plugins: [vue()],
     server: {
       host: '0.0.0.0',
-      port: 8090,
+      port: 9090,
       open: true,
     },
     resolve: {

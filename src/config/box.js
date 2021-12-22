@@ -323,4 +323,44 @@ export const boxImages = [
       width: '14px', outset: '0', slice: '14 fill', repeat: 'stretch',
     },
   },
+  {
+    id: 'box41',
+    name: '框41',
+    src: getImgUrl('box41.png'),
+    border: {
+      width: '14px', outset: '0', slice: '14 fill', repeat: 'stretch',
+    },
+  },
+  {
+    id: 'box42',
+    name: '框42',
+    src: getImgUrl('box42.png'),
+    border: {
+      width: '14px', outset: '0', slice: '14 fill', repeat: 'stretch',
+    },
+  },
+  {
+    id: 'box43',
+    name: '框43',
+    src: getImgUrl('box43.png'),
+    border: {
+      width: '14px', outset: '0', slice: '14 fill', repeat: 'stretch',
+    },
+  },
+  {
+    id: 'box44',
+    name: '框44',
+    src: getImgUrl('box44.png'),
+    border: {
+      width: '14px', outset: '0', slice: '14 fill', repeat: 'stretch',
+    },
+  },
+  {
+    id: 'box45',
+    name: '框45',
+    src: getImgUrl('box45.png'),
+    border: {
+      width: '20px', outset: '0', slice: '20 fill', repeat: 'stretch',
+    },
+  },
 ]

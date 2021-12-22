@@ -304,4 +304,3 @@ export const decorationImages = [
     css: { 'background-position': 'center', 'background-size': 'contain' },
   },
 ]
-

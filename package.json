@@ -19,7 +19,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "bin-ui-next": "^1.0.9",
+    "bin-ui-next": "^1.1.2",
     "vue": "^3.2.20"
   },
   "devDependencies": {

@@ -10,7 +10,7 @@
         active-text-color="#ffd04b"
         @select="handleSelect"
       >
-        <b-menu-item v-for="item in menus" :key="item.index" :index="item.index">
+        <b-menu-item v-for="item in imageMenu" :key="item.index" :index="item.index">
           <b-icon :name="item.icon"></b-icon>
           <template #title>{{ item.name }}</template>
         </b-menu-item>
@@ -35,36 +35,27 @@
 
 <script>
 import { ref, computed } from 'vue'
-import { backgroundImages } from '@/config/background'
 import { Message, Utils } from 'bin-ui-next'
-import { boxImages } from '@/config/box'
-import { loadingImages } from '@/config/loading'
-import { decorationImages } from '@/config/decoration'
-import { bgImages } from '@/config/bg'
-import { widgetImages } from '@/config/widget'
+import { presetImages, imageMenu } from '@/config'
 
 export default {
   name: 'App',
   setup() {
-    const menus = ref([
-      { index: 'background', icon: 'image-fill', name: '背景图' },
-      { index: 'box', icon: 'border', name: '边框盒子' },
-      { index: 'decoration', icon: 'block', name: '动态装饰器' },
-      { index: 'widget', icon: 'hourglass', name: '小部件' },
-      { index: 'bg', icon: 'image', name: '壁纸图片' },
-    ])
     const active = ref('background')
-    const presetImages = {
-      background: backgroundImages,
-      box: boxImages,
-      loading: loadingImages,
-      decoration: decorationImages,
-      widget: widgetImages,
-      bg: bgImages,
-    }
     const previewImages = computed(() => presetImages[active.value] || [])
 
     const getImgStyle = (img) => {
+      if (active.value === 'avatar') {
+        return {
+          width: '200px',
+          height: '200px',
+          opacity: 1,
+          'background-image': `url(${img.src})`,
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat',
+          ...img.css,
+        }
+      }
       if (active.value === 'box') {
         return {
           transform: 'translateZ(0px)',
@@ -74,6 +65,17 @@ export default {
           'border-width': `1px`,
           background: 'none',
           'border-image': `url(${img.src}) ${img.border.slice} / ${img.border.width} / ${img.border.outset} ${img.border.repeat}`,
+        }
+      }
+      if (active.value === 'other') {
+        return {
+          width: '100%',
+          height: '200px',
+          opacity: 1,
+          'background-image': `url(${img.src})`,
+          'background-size': '100% 100%',
+          'background-repeat': 'no-repeat',
+          ...img.css,
         }
       }
       return {
@@ -110,7 +112,7 @@ export default {
     }
 
     return {
-      menus,
+      imageMenu,
       active,
       previewImages,
       handleSelect,

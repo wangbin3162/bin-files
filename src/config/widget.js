@@ -10,36 +10,6 @@ export const widgetImages = [
     css: { 'background-position': 'center', 'background-size': 'contain' },
   },
   {
-    id: 'header1',
-    name: '头部1',
-    src: getImgUrl('header1.png'),
-    css: { 'background-position': 'center', 'background-size': 'contain' },
-  },
-  {
-    id: 'header2',
-    name: '头部2',
-    src: getImgUrl('header2.png'),
-    css: { 'background-position': 'center', 'background-size': 'contain' },
-  },
-  {
-    id: 'header3',
-    name: '头部3',
-    src: getImgUrl('header3.png'),
-    css: { 'background-position': 'center', 'background-size': 'contain' },
-  },
-  {
-    id: 'header4',
-    name: '头部4',
-    src: getImgUrl('header4.png'),
-    css: { 'background-position': 'center', 'background-size': 'contain' },
-  },
-  {
-    id: 'header5',
-    name: '头部5',
-    src: getImgUrl('header5.png'),
-    css: { 'background-position': 'center', 'background-size': 'contain' },
-  },
-  {
     id: 'widget1',
     name: '部件1',
     src: getImgUrl('widget1.png'),
