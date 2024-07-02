@@ -4,7 +4,7 @@ import { loadingImages } from '@/config/loading'
 import { decorationImages } from '@/config/decoration'
 import { headerImages } from '@/config/header'
 import { widgetImages } from '@/config/widget'
-import { bgImages ,bgImages1, bgImages2, bannerImages} from '@/config/bg'
+import { bgImages , bannerImages} from '@/config/bg'
 import { avatarImages } from '@/config/avatar'
 import { insertImages } from '@/config/insert'
 import { otherImages } from '@/config/other'
@@ -21,8 +21,6 @@ export const imageMenu = [
   { index: 'avatar', icon: 'user', name: '头像图' },
   { index: 'insert', icon: 'linkedin', name: '插画' },
   { index: 'bg', icon: 'image', name: '壁纸图片' },
-  { index: 'bg1', icon: 'image', name: '壁纸1' },
-  { index: 'bg2', icon: 'image', name: '壁纸2' },
   { index: 'animal', icon: 'image', name: '动物' },
   { index: 'other', icon: 'Report', name: '其他图片' },
 ]
@@ -38,8 +36,6 @@ export const presetImages = {
   widget: widgetImages,
   avatar: avatarImages,
   bg: bgImages,
-  bg1: bgImages1,
-  bg2: bgImages2,
   animal: animalImages,
   insert: insertImages,
   other: otherImages,
