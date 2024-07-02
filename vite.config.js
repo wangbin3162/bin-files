@@ -28,7 +28,7 @@ export default ({ mode }) => {
     optimizeDeps: {
       include: [
         'vue',
-        'bin-ui-next',
+        'bin-ui-design',
       ],
       exclude: [],
     },
@@ -43,7 +43,7 @@ export default ({ mode }) => {
           manualChunks(id) {
             if (id.includes('/node_modules/')) {
               // 设置需要独立打包的npm包
-              const expansions = ['bin-ui-next']
+              const expansions = ['bin-ui-design']
               const c = expansions.find(exp => id.includes(`/node_modules/${exp}`))
               if (c) {
                 return `chunk-${c}`

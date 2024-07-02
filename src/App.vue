@@ -35,7 +35,7 @@
 
 <script>
 import { ref, computed } from 'vue'
-import { Message, Utils } from 'bin-ui-next'
+import { Message, Utils } from 'bin-ui-design'
 import { presetImages, imageMenu } from '@/config'
 
 export default {
