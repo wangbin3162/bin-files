@@ -11,6 +11,4 @@ export const animalImages = [
   {id:'bg05',name:'背景05',src:getImgUrl('05.jpg')},
   {id:'bg06',name:'背景06',src:getImgUrl('06.jpg')},
   {id:'bg07',name:'背景07',src:getImgUrl('07.jpg')},
-  {id:'bg08',name:'背景08',src:getImgUrl('08.jpg')},
-  {id:'bg09',name:'背景09',src:getImgUrl('09.jpg')},
 ]
